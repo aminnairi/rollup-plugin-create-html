@@ -18,7 +18,6 @@ const render = (node) => {
     throw new Error(`property name for node ${JSON.stringify(node)} in property root is not a string`);
   }
 
-
   const allowedNodeKeys = ["name", "attributes", "children"];
 
   Object.keys(node).forEach(key => {
