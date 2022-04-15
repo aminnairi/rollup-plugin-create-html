@@ -1,4 +1,4 @@
-.PHONY: start stop restart install build
+.PHONY: start stop restart install build publish
 
 start:
 	docker-compose up --detach
@@ -13,3 +13,6 @@ install: start
 
 build: install
 	docker-compose exec node npm run build
+
+publish: build
+	docker-compose exec node npm publish --access public
