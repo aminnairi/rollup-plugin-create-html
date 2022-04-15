@@ -227,6 +227,13 @@ createHtml({
         name: "body",
         children: [
           {
+            name: "div",
+            attributes: {
+              id: "root"
+            },
+            children: []
+          }
+          {
             name: "script",
             attributes: {
               src: "index.js",
@@ -246,6 +253,7 @@ createHtml({
 <!DOCTYPE html>
 <html>
   <body>
+    <div id="root"></div>
     <script src='index.js' async></script>
   </body>
 </html>
