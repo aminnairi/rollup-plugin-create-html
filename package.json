@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "development": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "2.70.1"
+  }
+}
