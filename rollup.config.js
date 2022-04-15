@@ -9,6 +9,6 @@ export default {
   ],
   output: {
     file: "build/rollup-plugin-create-html.js",
-    format: "esm"
+    format: "cjs"
   }
 }
