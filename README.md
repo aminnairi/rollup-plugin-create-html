@@ -141,20 +141,18 @@ createHtml({
   name: "index.html",
   path: ".",
   doctype: "<!DOCTYPE html>",
-  // <!DOCTYPE html>
-  root: {}
-});
-
-createHtml({
-  name: "index.html",
-  path: ".",
-  doctype: "<!DOCTYPE html>",
-  // <!DOCTYPE html><html>
   root: {
     name: "html"
   }
 });
+```
 
+```html
+<!DOCTYPE html>
+<html>
+```
+
+```javascript
 createHtml({
   name: "index.html",
   path: ".",
@@ -165,7 +163,14 @@ createHtml({
     children: []
   }
 });
+```
 
+```html
+<!DOCTYPE html>
+<html></html>
+```
+
+```javascript
 createHtml({
   name: "index.html",
   path: ".",
@@ -180,7 +185,14 @@ createHtml({
     children: []
   }
 });
+```
 
+```html
+<!DOCTYPE html>
+<html lang='en-US' dir='ltr'></html>
+```
+
+```javascript
 createHtml({
   name: "index.html",
   path: ".",
@@ -193,7 +205,16 @@ createHtml({
     ]
   }
 });
+```
 
+```html
+<!DOCTYPE html>
+<html>
+  HTML
+</html>
+```
+
+```javascript
 createHtml({
   name: "index.html",
   path: ".",
@@ -219,4 +240,13 @@ createHtml({
     ]
   }
 });
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src='index.js' async></script>
+  </body>
+</html>
 ```
