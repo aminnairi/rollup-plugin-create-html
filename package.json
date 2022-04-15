@@ -22,7 +22,7 @@
   "name": "@aminnairi/rollup-plugin-create-html",
   "version": "0.1.0",
   "scripts": {
-    "development": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js"
   },
   "devDependencies": {
     "@aminnairi/rollup-plugin-external": "0.1.3",

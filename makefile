@@ -1,4 +1,4 @@
-.PHONY: start stop restart install development
+.PHONY: start stop restart install build
 
 start:
 	docker-compose up --detach
@@ -11,5 +11,5 @@ restart: stop start
 install: start
 	docker-compose exec node npm install
 
-development: install
-	docker-compose exec node npm run development
+build: install
+	docker-compose exec node npm run build
